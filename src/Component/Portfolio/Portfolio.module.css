@@ -1,0 +1,50 @@
+.line {
+    position: relative;
+  }
+  
+  .line::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 5px;
+    background-color:#2C3E50;
+    left: 25px;
+    top: 10px;
+  }
+  
+  .line::before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 5px;
+    background-color:#2C3E50;
+    right: 25px;
+    top: 10px;
+  }
+
+  .bg_color{ color:#2C3E50 !important;}
+
+  .image{position: relative;
+  overflow: hidden;}
+
+.overlay {
+background-color:  #1abc9ce6;
+position: absolute;
+width: 89%;
+display: flex;
+justify-content: center;
+top: 0;
+height: 100%;
+align-items: center;
+opacity: 0;
+transition: opacity 1s;
+}
+
+.image:hover .overlay {
+  opacity: 1 !important;
+}
+
+.none{display: none;
+background-color: rgba(0, 0, 0, 0.5);}
+
+
